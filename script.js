@@ -33,7 +33,7 @@ function swapTrun(){
     else{
         currentPlayer = "X";
     }
-    gameInfo.innerText = `Current player - ${currentPlayer}`;
+    gameInfo.innerText = `Current Player - ${currentPlayer}`;
 }
 boxes.forEach((box, index) => {
     box.addEventListener("click" , () =>{
@@ -59,7 +59,7 @@ function checkGameOver(){
         }
     });
     if (answer !== "") {
-        gameInfo.innerText = `winner Player - ${answer}`;
+        gameInfo.innerText = `Winner Player - ${answer}`;
         newGameBtn.classList.add("active");
         return;
     }
